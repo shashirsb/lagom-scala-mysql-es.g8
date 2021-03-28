@@ -4,7 +4,7 @@
 lazy val root = (project in file("."))
   .enablePlugins(ScriptedPlugin)
   .settings(
-    name := "lagom-scala-mysql-es",
+    name := "lagom-scala-oracle-es",
     test in Test := {
       val _ = (g8Test in Test).toTask("").value
     },

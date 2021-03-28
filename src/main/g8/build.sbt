@@ -1,6 +1,6 @@
 import Dependencies._
 
-name := "lagom-scala-mysql-es"
+name := "lagom-scala-oracle-es"
 
 version := "0.1"
 
@@ -8,7 +8,7 @@ scalaVersion := "2.12.8"
 
 lagomKafkaEnabled in ThisBuild := false
 
-lazy val `lagom-scala-mysql-es` = (project in file("."))
+lazy val `lagom-scala-oracle-es` = (project in file("."))
   .aggregate(`user-api`, `user-impl`)
 
 lazy val `user-api` = (project in file("user-api"))
